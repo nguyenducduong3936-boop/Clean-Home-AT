@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bán Hàng | Clean Home AT</title>
+    <!-- Mô tả -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Thiết lập font chữ Time News Roman làm mặc định */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Custom gradient for hero section */
+        .hero-bg {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        }
+        /* Style cho nút chính */
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(251, 146, 60, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <!-- Logo/Tên cửa hàng -->
+            <a href="#hero" class="text-2xl font-bold text-gray-800 hover:text-orange-500 transition duration-300">
+                [Clean Home AT]
+            </a>
+            <!-- Menu cho Mobile/Desktop -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-orange-500 font-medium transition duration-300">Về Chúng Tôi</a>
+                <a href="#products" class="text-gray-600 hover:text-orange-500 font-medium transition duration-300">Sản Phẩm</a>
+                <a href="#contact" class="text-gray-600 hover:text-orange-500 font-medium transition duration-300">Liên Hệ</a>
+            </nav>
+            <!-- Nút menu mobile (có thể thêm JS nếu cần menu dropdown, nhưng giữ đơn giản) -->
+            <button class="md:hidden text-gray-600 hover:text-orange-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (Giới thiệu nổi bật) -->
+    <section id="hero" class="hero-bg text-white py-16 md:py-24 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                Khám Phá các Bộ lõi lọc nước và Máy lọc nước Tuyệt Vời!
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90">
+                Chất lượng đỉnh cao, giá trị vượt trội. Chúng tôi mang đến giải pháp tốt nhất cho bạn.
+            </p>
+            <a href="#products" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg btn-primary">
+                Xem Ngay Bộ Sưu Tập Mới
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section (Về Chúng Tôi) -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-10">
+                Tìm hiểu thêm về cửa hàng gia dụng Clean Home AT
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <!-- Image Placeholder -->
+                <div class="rounded-xl shadow-2xl overflow-hidden">
+                    <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Hình+ảnh+cửa+hàng+hoặc+giá+trị" alt="Hình ảnh giới thiệu về cửa hàng" class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
+                </div>
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Được thành lập với sứ mệnh mang lại [Giá trị cốt lõi, ví dụ: "sản phẩm thủ công chất lượng cao"], chúng tôi tin rằng mỗi món đồ phải là sự kết hợp hoàn hảo giữa thiết kế và tính năng. Chúng tôi cam kết sử dụng nguyên liệu [Tự điền nguyên liệu, ví dụ: "tự nhiên và bền vững"].
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Trong suốt [Số năm] năm qua, chúng tôi đã phục vụ hàng ngàn khách hàng hài lòng. Sự hài lòng của bạn là động lực lớn nhất của chúng tôi!
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Cam kết chất lượng chuẩn 100%
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Giao hàng nhanh chóng toàn quốc
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Hỗ trợ 24/7
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section (Sản Phẩm) -->
+    <section id="products" class="py-16 md:py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+                Các Sản Phẩm Nổi Bật
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <div class="relative h-60">
+                        <img src="https://placehold.co/600x400/fb923c/FFFFFF?text=Sản+phẩm+A" alt="Sản phẩm A" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">BÁN CHẠY</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sản Phẩm A</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Mô tả ngắn gọn về sản phẩm A. Chất liệu tốt, thiết kế độc đáo, được khách hàng yêu thích.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-orange-500">350.000 VNĐ</span>
+                            <button class="bg-gray-800 hover:bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <div class="relative h-60">
+                        <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Sản+phẩm+B" alt="Sản phẩm B" class="w-full h-full object-cover">
+                        <span class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">MỚI</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sản Phẩm B</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Mô tả ngắn gọn về sản phẩm B. Một lựa chọn tuyệt vời, phù hợp với mọi nhu cầu.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-orange-500">599.000 VNĐ</span>
+                            <button class="bg-gray-800 hover:bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <div class="relative h-60">
+                        <img src="https://placehold.co/600x400/10b981/FFFFFF?text=Sản+phẩm+C" alt="Sản phẩm C" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sản Phẩm C</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">Mô tả ngắn gọn về sản phẩm C. Giá cả phải chăng, chất lượng vẫn được đảm bảo.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-extrabold text-orange-500">120.000 VNĐ</span>
+                            <button class="bg-gray-800 hover:bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Footer in Product Section -->
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg btn-primary">
+                    Đặt Hàng Ngay!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Liên Hệ) -->
+    <section id="contact" class="py-16 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Liên Hệ Với Chúng Tôi
+            </h2>
+            <p class="text-gray-600 text-lg mb-8">
+                Bạn có bất kỳ câu hỏi nào? Đừng ngần ngại liên hệ với đội ngũ hỗ trợ của chúng tôi!
+            </p>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-xl space-y-4">
+                <p class="text-xl font-semibold text-gray-700">Địa chỉ:Ngõ 85 Lê Văn Hiến,phường Đức Thắng,quận Bắc Từ Liêm,thành phố Hà Nội</p>
+                <p class="text-lg text-gray-600">Số 123, Đường ABC, Quận XYZ, TP. Hà Nội/Hồ Chí Minh</p>
+
+                <p class="text-xl font-semibold text-gray-700 pt-4">Số điện thoại:</p>
+                <p class="text-lg text-orange-500 font-bold">0987-654-321</p>
+
+                <p class="text-xl font-semibold text-gray-700 pt-4">Email:</p>
+                <p class="text-lg text-orange-500 font-bold">hotro@ten_cuahang_cua_ban.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 [Tên Cửa Hàng Của Bạn]. Tất cả bản quyền được bảo lưu.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition duration-300">Chính sách bảo mật</a>
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition duration-300">Điều khoản dịch vụ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
